@@ -8,19 +8,13 @@ int main(void)
 {
 char ch;
 char ch2;
-char listCH[53];
-int i;
- for (ch = 'a' ; ch <= 'z' ; ch++)
+ for (ch = 97 ; ch <= 122 ; ch++)
 {
-  listCH += ch;
+  putchar(ch);
 }
-for (ch2 = 'A' ; ch <= 'Z' ; ch++)
+for (ch2 = 41 ; ch <= 90 ; ch++)
 {
-  listCH =+ ch2;
-}
- for (i=0; i<53; i++)
-   {
-     putchar(listCH[i]);
+  putchar(ch2);
    }
  putchar('\n');
 return (0);
