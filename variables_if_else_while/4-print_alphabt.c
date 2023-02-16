@@ -7,9 +7,9 @@
 int main(void)
 {
 char ch;
-for( ch = 97 ; ch <= 122 ; ch++)
+for (ch = 97 ; ch <= 122 ; ch++)
 {
-if( ch != 101 && ch != 113)
+if (ch != 101 && ch != 113)
 {
 putchar(ch);
 }
