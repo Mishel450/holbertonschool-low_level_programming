@@ -12,7 +12,7 @@ char ch2;
  for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
-if (god==true)
+if (1<2)
 {
 for (ch2 = 'A' ; ch <= 'Z' ; ch++)
 {
