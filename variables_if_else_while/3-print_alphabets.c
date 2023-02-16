@@ -8,7 +8,6 @@ int main(void)
 {
 char ch;
 char ch2;
- bool god=true;
  for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
