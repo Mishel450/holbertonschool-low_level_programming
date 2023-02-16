@@ -8,14 +8,20 @@ int main(void)
 {
 char ch;
 char ch2;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+char listCH[];
+ int i;
+ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-putchar(ch);
+  listCH += ch;
 }
 for (ch2 = 'A' ; ch <= 'Z' ; ch++)
 {
-putchar(ch2);
+  listCH =+ ch2;
 }
-putchar('\n');
+ for (i=0; i<53; i++)
+   {
+     putchar(listCH[i]);
+   }
+ putchar('\n');
 return (0);
 }
