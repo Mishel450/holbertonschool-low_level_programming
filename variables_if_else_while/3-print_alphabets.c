@@ -7,18 +7,18 @@
 int main(void)
 {
 char ch;
- char ch2;
- for (ch = 'a' ; ch <= 'z' ; ch++)
+char ch2;
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-  putchar(ch);
-  if (ch == 'y')
-    {
-      for (ch2 = 'A' ; ch <= 'Z' ; ch++)
-	{
-	  putchar(ch2);
-	}
-	}
- }
+putchar(ch);
+if (true)
+{
+for (ch2 = 'A' ; ch <= 'Z' ; ch++)
+{
+putchar(ch2);
+}
+}
+}
 putchar('\n');
 return (0);
 }
