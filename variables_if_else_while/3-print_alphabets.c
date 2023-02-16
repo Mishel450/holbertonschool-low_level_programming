@@ -10,12 +10,12 @@ char ch;
 char ch2;
 for (ch = 97 ; ch <= 122 ; ch++)
 {
-  putchar(ch);
+putchar(ch);
 }
 for (ch2 = 65 ; ch2 <= 90 ; ch2++)
 {
-  putchar(ch2);
-   }
- putchar('\n');
+putchar(ch2);
+}
+putchar('\n');
 return (0);
 }
