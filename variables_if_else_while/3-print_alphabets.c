@@ -8,8 +8,8 @@ int main(void)
 {
 char ch;
 char ch2;
-char listCH[];
- int i;
+char listCH[53];
+int i;
  for (ch = 'a' ; ch <= 'z' ; ch++)
 {
   listCH += ch;
