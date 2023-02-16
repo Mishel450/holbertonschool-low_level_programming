@@ -8,10 +8,11 @@ int main(void)
 {
 char ch;
 char ch2;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+ bool god=true;
+ for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar(ch);
-if (true)
+if (god==true)
 {
 for (ch2 = 'A' ; ch <= 'Z' ; ch++)
 {
