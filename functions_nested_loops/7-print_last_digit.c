@@ -8,6 +8,6 @@
 int print_last_digit(int i)
 {
 i = (i % 10);
-printf("%d%d\n" i, i);
+printf("%d %d\n" i, i);
 return (0);
 }
