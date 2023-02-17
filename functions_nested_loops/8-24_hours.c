@@ -17,18 +17,18 @@ for (y = 0 ; y <= 23 ; y++)
 _putchar(hoursFirst);
 _putchar(hoursSecond);
 hoursSecond++;
-if (hoursSecond > 56)
+if (hoursSecond > 57)
 {
 hoursSecond = 48;
 hoursFirst++;
 }
  _putchar(58);
-for (i = 0 ; y <= 59 ; i++)
+for (i = 0 ; i <= 59 ; i++)
   {
     _putchar(minFirst);
     _putchar(minSecond);
     minSecond++;
-    if (minSecond > 56)
+    if (minSecond > 57)
       {
 	minSecond = 48;
 	minFirst++;
