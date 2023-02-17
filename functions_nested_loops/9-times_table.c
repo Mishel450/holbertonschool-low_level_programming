@@ -14,8 +14,8 @@ void times_table(void)
     {
       for (number = 48 ; number <= 57 ; number++)
 	{
-	  result = (i + multiply);
-	  multiply = result;  
+multiply = result;
+	  result = (i + multiply);  
 	    _putchar(result + 48);
 	    _putchar(44);
 	    _putchar(' ');
