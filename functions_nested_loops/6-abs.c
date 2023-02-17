@@ -12,5 +12,5 @@ int i;
 
 i = abs(r);
 printf("%d", i);
-return ("");
+return (0);
 }
