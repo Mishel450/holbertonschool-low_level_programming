@@ -1,8 +1,7 @@
 #include "main.h"
-
 /**
  * _isalpha - _isalpha
- *
+ * @c: is a character
  * Return: Always 0.
  */
 int _isalpha(int c)
