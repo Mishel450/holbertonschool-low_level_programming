@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * main - check the code
+ * jack_bauer - check the code
  *
  * Return: Always 0.
  */
 void jack_bauer(void)
 {
-int minFirst= 48;
-int minSecond= 48;
-int hoursFirst= 48;
-int hoursSecond= 48;
+int minFirst = 48;
+int minSecond = 48;
+int hoursFirst = 48;
+int hoursSecond = 48;
 int i;
 int y;
 for (y = 0 ; y <= 23 ; y++)
