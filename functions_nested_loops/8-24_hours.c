@@ -25,10 +25,14 @@ for (i = 0 ; i <= 59 ; i++)
     minSecond++;
     if (minSecond > 57)
       {
-	minSecond = (minSecond - 9);
+	minSecond = 48;
 	minFirst++;
       }
-}
+    if (minFirst > 53)
+      {
+	minFirst = 48;
+      }
+  }
 hoursSecond++;
 if (hoursSecond > 57)
 {
