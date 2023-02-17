@@ -8,7 +8,7 @@
 int print_last_digit(int i)
 {
 int j = (i % 10);
-printf("%d", j);
-printf("\n");
+_putchar(j);
+_putchar('\n');
 return (0);
 }
