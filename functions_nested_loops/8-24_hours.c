@@ -28,12 +28,12 @@ for (i = 0 ; y <= 59 ; i++)
     _putchar(minFirst);
     _putchar(minSecond);
     minSecond++;
-    _putchar('\n');
     if (minSecond > 57)
       {
 	minSecond = 48;
 	minFirst++;
       }
 }
+_putchar('n');
  }
 }
