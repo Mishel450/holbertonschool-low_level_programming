@@ -10,6 +10,6 @@ int _abs(int r)
 {
 int i;
 i = abs(r);
-printf("%d\n", i);
+_putchar("%d\n", i);
 return (0);
 }
