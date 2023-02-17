@@ -14,26 +14,26 @@ int i;
 int y;
 for (y = 0 ; y <= 23 ; y++)
 {
-_putchar(hoursFirst);
-_putchar(hoursSecond);
+for (i = 0 ; i <= 59 ; i++)
+  {
+    _putchar(hoursFirst);
+    _putchar(hoursSecond);
+    _putchar(58);
+    _putchar(minFirst);
+    _putchar(minSecond);
+    _putchar('\n');
+    minSecond++;
+    if (minSecond > 57)
+      {
+	minSecond = (minSecond - 9);
+	minFirst++;
+      }
+}
 hoursSecond++;
 if (hoursSecond > 57)
 {
 hoursSecond = 48;
 hoursFirst++;
 }
- _putchar(58);
-for (i = 0 ; i <= 59 ; i++)
-  {
-    _putchar(minFirst);
-    _putchar(minSecond);
-    minSecond++;
-    if (minSecond > 57)
-      {
-	minSecond = 48;
-	minFirst++;
-      }
-}
-_putchar('n');
  }
 }
