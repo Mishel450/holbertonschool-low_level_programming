@@ -11,7 +11,7 @@ if (r >= 0)
 return (r);
 if (r < -1)
 {
-r = (r * (-1))
+r = (r * (-1));
 return (r);
 }
 }
