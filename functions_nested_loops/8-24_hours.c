@@ -12,17 +12,18 @@ for (y = 0 ; y <= 23 ; y++)
 {
 if (y <= 9)
 {
-_putchar(48);
+_putchar('0');
 }
-_putchar(y+48);
-_putchar(58);
+_putchar(y);
+_putchar(':');
 for (i = 0 ; y <= 59 ; i++)
 {
 if (i <= 9)
 {
-_putchar(48);
+_putchar('0');
 }
-_putchar(i+48);
+_putchar(i);
+ _putchar('\n');
 }
 }
 }
