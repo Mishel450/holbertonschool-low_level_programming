@@ -6,16 +6,18 @@
  */
 void times_table(void)
 {
-  int multiply= 49;
+  int multiply= 0;
   int number;
   int result;
   int i;
+  int j;
   for (i = 0 ; i <= 9 ; i++)
     {
       for (number = 48 ; number <= 57 ; number++)
 	{
-	  result = (number * multiply);
-	    _putchar(result);
+	  result = (i + multiply);
+	  multiply = result;  
+	    _putchar(result + 48);
 	    _putchar(44);
 	    _putchar(' ');
 	    if(result <= 9)
