@@ -14,4 +14,5 @@ if (r < -1)
 r = (r * (-1));
 return (r);
 }
+return (0);
 }
