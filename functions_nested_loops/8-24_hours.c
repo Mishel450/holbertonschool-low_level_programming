@@ -15,29 +15,29 @@ int y;
 for (y = 0 ; y <= 23 ; y++)
 {
 for (i = 0 ; i <= 59 ; i++)
-  {
-    _putchar(hoursFirst);
-    _putchar(hoursSecond);
-    _putchar(58);
-    _putchar(minFirst);
-    _putchar(minSecond);
-    _putchar('\n');
-    minSecond++;
-    if (minSecond > 57)
-      {
-	minSecond = 48;
-	minFirst++;
-      }
-    if (minFirst > 53)
-      {
-	minFirst = 48;
-      }
-  }
+{
+_putchar(hoursFirst);
+_putchar(hoursSecond);
+_putchar(58);
+_putchar(minFirst);
+_putchar(minSecond);
+_putchar('\n');
+minSecond++;
+if (minSecond > 57)
+{
+minSecond = 48;
+minFirst++;
+}
+if (minFirst > 53)
+{
+minFirst = 48;
+}
+}
 hoursSecond++;
 if (hoursSecond > 57)
 {
 hoursSecond = 48;
 hoursFirst++;
 }
- }
+}
 }
