@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * _abs - check the code
  * @r: is a character
@@ -7,6 +8,6 @@
  */
 int _abs(int r)
 {
-printf("%d", r);
-return (0);
+i = abs(r);
+printf("%d", i);
 }
