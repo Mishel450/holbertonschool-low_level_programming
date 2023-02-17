@@ -6,7 +6,7 @@
  */
 void times_table(void)
 {
-  int multiply= 48;
+  int multiply= 49;
   int number;
   int result;
   int i;
@@ -21,10 +21,9 @@ void times_table(void)
 	    if(result <= 9)
 	      {
 		_putchar(' ');
-		multiply++;
 	      }
+}
 _putchar('\n');
-	    number++;
-	}
+multiply++;
     }
 }
