@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * times_table - check the code
@@ -6,25 +7,17 @@
  */
 void times_table(void)
 {
-  int multiply= 0;
+  int multiply= '0';
   int number;
-  int result;
+  int result=number*multiply;
   int i;
-  for (i = 0 ; i <= 9 ; i++)
-    {
-      for (number = 48 ; number <= 57 ; number++)
-	{
-multiply = result;
-	  result = (i + multiply);  
-	    _putchar(result + 48);
-	    _putchar(44);
-	    _putchar(' ');
-	    if(result <= 9)
-	      {
-		_putchar(' ');
-	      }
-}
-_putchar('\n');
-multiply++;
-    }
-}
+for (i = 0 ; i <= 9 ; i++)
+  {
+    for (number = 48 ; number <= 57 ; number++)
+      {
+	_putchar(result);
+	_putchar(44);
+	_putchar(32);
+      }
+    multiply++;
+  }
