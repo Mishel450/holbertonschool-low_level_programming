@@ -11,7 +11,7 @@ void times_table(void)
   int numberM;
   int resultN;
   int i;
-  resultN=numberM*multiply
+  resultN=numberM*multiply;
 for (i = 0 ; i <= 9 ; i++)
   {
     for (numberM = 48 ; numberM <= 57 ; numberM++)
