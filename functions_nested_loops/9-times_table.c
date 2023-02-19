@@ -8,13 +8,15 @@
 void times_table(void)
 {
   int multiply= '0';
-  int result=number*multiply;
+  int numberM;
+  int resultN;
   int i;
+  resultN=numberM*multiply
 for (i = 0 ; i <= 9 ; i++)
   {
-    for (number = 48 ; number <= 57 ; number++)
+    for (numberM = 48 ; numberM <= 57 ; numberM++)
       {
-	_putchar(result);
+	_putchar(resultN);
 	_putchar(44);
 	_putchar(32);
       }
