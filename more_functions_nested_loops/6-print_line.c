@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_numbers - check the code.
+ * print_line - check the code.
  * @n: is a character.
  * Return: Always 0.
  */
