@@ -12,17 +12,17 @@ int j;
 int z= 48;
 for (i = 48 ; i <= 57 ; i++)
 {
-  for (j = 0 ; j <= 14 ; j++)
+for (j = 0 ; j <= 14 ; j++)
 {
-  if (j >= 10)
-    {
-      _putchar(49);
-    }
-  if (z == 58)
-    {
-      z= 48; 
-    }
-  _putchar(z);
+if (j >= 10)
+{
+_putchar(49);
+}
+if (z == 58)
+{
+z= 48; 
+}
+_putchar(z);
 z++;
 }
 _putchar('\n');
