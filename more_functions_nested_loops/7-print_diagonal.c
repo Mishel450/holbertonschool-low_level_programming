@@ -19,10 +19,7 @@ z=1;
 if (n >= 1)
 {
 _putchar(92);
-if (i != n)
-{
+}
 _putchar('\n');
-}
-}
 }
 }
