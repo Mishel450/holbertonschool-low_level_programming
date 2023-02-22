@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_numbers - check the code.
- * @c: is a character.
+ * @i: is a character.
  * Return: Always 0.
  */
 void print_numbers(void)
