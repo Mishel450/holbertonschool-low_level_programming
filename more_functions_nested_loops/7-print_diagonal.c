@@ -11,7 +11,7 @@ int i;
 int z;
 for (i = 1 ; i <= n ; i++)
 {
-for(z = 1 ; z <= i ; z++)
+for(z = 1 ; z < i ; z++)
 {
 _putchar(' ');
 }
