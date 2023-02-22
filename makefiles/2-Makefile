@@ -1,9 +1,9 @@
 CC = gcc
 SRC = main.c school.c
 OBJ = obj1 obj2
-NAME = school
+NAME =
 
 all:
 	cc    -c -o obj1 main.c
 	cc    -c -o obj2 school.c
-	cc obj1 obj2 -o NAME
+	cc obj1 obj2 -o school
