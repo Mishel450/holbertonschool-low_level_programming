@@ -14,7 +14,11 @@ for (i = 48 ; i <= 57 ; i++)
 {
   for (j = 0 ; j <= 14 ; j++)
 {
-_putchar(z);
+  if (z == 58)
+    {
+      z= 48; 
+    }
+  _putchar(z);
 z++;
 }
 _putchar('\n');
