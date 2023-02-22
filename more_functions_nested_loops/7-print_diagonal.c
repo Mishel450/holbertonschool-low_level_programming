@@ -15,7 +15,7 @@ for (z = 1 ; z < i ; z++)
 {
 _putchar(' ');
 }
-z=1;
+z = 1;
 if (n >= 1)
 {
 _putchar(92);
