@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int isupper(int c);
+int isupper(int c)
 {
 if (c = [[:upper:]])
 {
