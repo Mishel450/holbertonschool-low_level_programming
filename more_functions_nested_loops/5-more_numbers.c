@@ -9,7 +9,7 @@ void more_numbers(void)
 {
 int i;
 int j;
-int z= 48;
+int z = 48;
 for (i = 48 ; i <= 57 ; i++)
 {
 for (j = 0 ; j <= 14 ; j++)
@@ -20,13 +20,13 @@ _putchar(49);
 }
 if (z == 58)
 {
-z= 48; 
+z = 48; 
 }
 _putchar(z);
 z++;
 }
 _putchar('\n');
-j= 0;
-z= 48;
+j = 0;
+z = 48;
 }
 }
