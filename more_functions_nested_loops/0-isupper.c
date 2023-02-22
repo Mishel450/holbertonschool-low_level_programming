@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * isupper - check the code.
- *
+ * _isupper - check the code.
+ * @c: is a character.
  * Return: Always 0.
  */
 int _isupper(int c)
