@@ -18,4 +18,8 @@ _putchar(35);
 i = 1;
 _putchar('\n');
 }
+if (size <= 0)
+{
+_putchar('\n');
+}
 }
