@@ -20,7 +20,7 @@ _putchar(49);
 }
 if (z == 58)
 {
-z = 48; 
+z = 48;
 }
 _putchar(z);
 z++;
