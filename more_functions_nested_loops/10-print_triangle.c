@@ -14,7 +14,10 @@ for (j = 0 ; j <= size ; j++)
 {
 for (i = 0 ; i <= size ; i++)
 {
+if(i < z)
+{
 _putchar(32);
+}
 if (i >= z)
 {
 _putchar(35);
