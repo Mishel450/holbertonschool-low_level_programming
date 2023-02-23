@@ -14,13 +14,15 @@ for (j = 1 ; j <= size ; j++)
 {
 for (i = 1 ; i <= size ; i++)
 {
-_putchar(32);
+_putchar(35);
 }
- for ( z = size ; z >= i  ; z--)
-   {
-     _putchar(35);
-   }
- i = 1;
+for ( z = size )
+{
+_putchar(35);
+}
+i = 1;
+size--;
+z++;
 _putchar('\n');
 }
 if (size <= 0)
