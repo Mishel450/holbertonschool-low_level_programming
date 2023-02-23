@@ -10,9 +10,9 @@ void print_triangle(int size)
 int i;
 int j;
 int z =size;
-for (j = 0 ; j <= size ; j++)
+for (j = 1 ; j <= size ; j++)
 {
-for (i = 0 ; i <= size ; i++)
+for (i = 1 ; i <= size ; i++)
 {
 if(i < z)
 {
