@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * print_pev - check the code.
+ * print_rev - check the code.
  * @s: is a character
  * Return: Always 0.
  */
