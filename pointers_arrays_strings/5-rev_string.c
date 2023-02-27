@@ -8,13 +8,13 @@
 void rev_string(char *s)
 {
 int i;
-int z = 0;
+int count = 0;
 int size = strlen(s);
-char j[1000];
+char newArray[1000];
 for (i = size - 1 ; i >= 0 ; i--)
 {
-j[z] = s[i];
-z++;
+newArray[count] = s[i];
+count++;
 }
-strcpy(s, j);
+strcpy(s, newArray);
 }
