@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * _puts - check the code.
  * @str: is a pointer of char type
@@ -7,5 +8,5 @@
  */
 void _puts(char *str)
 {
-puts(str + '\n');
+  _puts(str);
 }
