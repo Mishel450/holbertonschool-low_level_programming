@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * reset_to_98 - check the code.
+ * _strlen - check the code.
  * @s: is a character
  * Return: Always 0.
  */
