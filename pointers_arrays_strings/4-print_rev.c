@@ -1,13 +1,15 @@
 #include "main.h"
+#include <string.h>
 /**
  * reset_to_98 - check the code.
- * @n: is a character
+ * @s: is a character
  * Return: Always 0.
  */
 void print_rev(char *s)
 {
 int i;
-for ( i = s ; i >= 0 ; i--)
+ int size = strlen(s);
+for ( i = size - 1 ; i >= 0 ; i--)
 {
 _putchar(s[i]);
 }
