@@ -11,7 +11,7 @@ int i;
 int count = 0;
 int size = strlen(s);
 char newArray[1000];
-for (i = size - 1 ; i >= 0 ; i--)
+for (i = size - 1 ; i >= 0; i--)
 {
 newArray[count] = s[i];
 count++;
