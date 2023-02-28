@@ -14,7 +14,7 @@ for (i = 0; i <= size; i++)
 {
 if (i == 0 && i % 2 == 0)
 {
-_putchar(*str)
+_putchar(*str);
 }
 }
 }
