@@ -14,11 +14,11 @@ for (i = 0; i <= size; i++)
 {
 if (i % 2 == 0 && i != 0)
 {
-_putchar(str);
+_putchar(*str);
 }
 if (i == 0)
 {
-_putchar(str);
+_putchar(*str);
 }
 }
 _putchar('\n');
