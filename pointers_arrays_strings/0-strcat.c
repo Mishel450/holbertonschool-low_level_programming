@@ -22,6 +22,5 @@ for (k = 0 ; k <= size2 ; k++)
 i++;
 j[i] = src[k];
 }
-strcpy(dest, j);
-return (dest);
+return (j);
 }
