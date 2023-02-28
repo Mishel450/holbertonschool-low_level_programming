@@ -9,18 +9,19 @@
 void puts2(char *str)
 {
 int i;
+int j = str;
 int size = strlen(str);
 for (i = 0; i <= size -1; i++)
 {
 if (i % 2 == 0 && i != 0)
 {
-_putchar(*str);
+_putchar(j);
 }
 if (i == 0)
 {
-_putchar(*str);
+_putchar(j);
 }
-*str++;
+j++;
 }
 _putchar('\n');
 }
