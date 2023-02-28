@@ -20,6 +20,7 @@ if (i == 0)
 {
 _putchar(*str);
 }
+*str++;
 }
 _putchar('\n');
 }
