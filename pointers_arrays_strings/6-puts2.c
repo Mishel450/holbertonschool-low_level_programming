@@ -16,7 +16,7 @@ if (i % 2 == 0 && i != 0)
 {
 _putchar(*str);
 }
-if (i = 0)
+if (i == 0)
 {
 _putchar(*str);
 }
