@@ -17,7 +17,7 @@ if (n > size2)
 for (i = 0 ; i <= size2 - 1; i++)
 {
 dest[size1] = src[i];
-size1++
+size1++;
 }
 }
 else
