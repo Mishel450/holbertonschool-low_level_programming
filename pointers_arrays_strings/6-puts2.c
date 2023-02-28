@@ -18,8 +18,8 @@ _putchar(*str);
 }
 if (i % 2 == 0)
 {
-_putchar(*str)
+_putchar(*str);
 }
 }
-_putchar('\n')
+_putchar('\n');
 }
