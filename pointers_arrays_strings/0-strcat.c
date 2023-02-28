@@ -11,16 +11,10 @@ char *_strcat(char *dest, char *src)
 int i;
 int size1 = strlen(dest);
 int size2 = strlen(src);
-char j[1000];
-int k;
-for (i = 0 ; i <= size1 ; i++)
+for (i = 0 ; i <= size2 ; i++)
 {
-j[i] = dest[i];
+dest[size2] = src[i];
+size2++;
 }
-for (k = 0 ; k <= size2 ; k++)
-{
-i++;
-j[i] = src[k];
-}
-return (j);
+return (dest);
 }
