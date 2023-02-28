@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * *_strcat - check the code
+ * *_strncat - check the code
  * @dest: is a string
  * @src: is a string
  * @n: is a number
