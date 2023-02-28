@@ -12,11 +12,11 @@ int i;
 int size = strlen(str);
 for (i = 0; i <= size; i++)
 {
-if (i == 0)
+if (i % 2 == 0 && i != 0)
 {
 _putchar(*str);
 }
-if (i % 2 == 0 && i != 0)
+if (i = 0)
 {
 _putchar(*str);
 }
