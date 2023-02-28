@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * puts_half - check the code.
+ * print_array - check the code.
  * @a: is a string
  * @n: is a number
  * Return: Always 0.
