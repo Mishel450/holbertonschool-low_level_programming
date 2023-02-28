@@ -20,7 +20,7 @@ return (i - '0');
 int _atoi(char *s)
 {
 unsigned int i, n = 0;
-unsigned int min = 0;  
+unsigned int min = 0;
 unsigned int len = strlen(s);
 
 for (i = 0; i < len; i++)
