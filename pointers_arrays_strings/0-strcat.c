@@ -13,8 +13,8 @@ int size1 = strlen(dest);
 int size2 = strlen(src);
 for (i = 0 ; i <= size2 ; i++)
 {
-dest[size2] = src[i];
-size2++;
+dest[size1] = src[i];
+size1++;
 }
 return (dest);
 }
