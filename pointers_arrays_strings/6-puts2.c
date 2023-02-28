@@ -9,19 +9,17 @@
 void puts2(char *str)
 {
 int i;
-int j = *str;
 int size = strlen(str);
 for (i = 0; i <= size -1; i++)
 {
 if (i % 2 == 0 && i != 0)
 {
-_putchar(j);
+_putchar(str[i]);
 }
 if (i == 0)
 {
-_putchar(j);
+_putchar(str[i]);
 }
-j++;
 }
 _putchar('\n');
 }
