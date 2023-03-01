@@ -17,7 +17,7 @@ if (s1 != s2)
 break;
 }
 }
-if (i =! size)
+if (i != size)
 {
 return (s1[i] - s2[i]);
 }
