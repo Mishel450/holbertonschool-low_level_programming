@@ -10,7 +10,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
-int size = strlen(src);
+int size = strlen(dest);
 if (size >= n)
 {
 for (i = 0 ; i <= size -1 ; i++)
