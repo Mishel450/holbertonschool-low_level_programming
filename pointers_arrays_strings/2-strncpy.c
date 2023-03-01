@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 int i;
 int size = strlen(src);
-if (size = 0)
+if (size == 0)
 {
 return ("");
 }
