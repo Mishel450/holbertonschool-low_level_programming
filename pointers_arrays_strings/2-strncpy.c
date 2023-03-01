@@ -13,7 +13,7 @@ int i;
 int size = strlen(src);
 if (size = 0)
 {
-return ("")
+return ("");
 }
 if (n > size)
 {
