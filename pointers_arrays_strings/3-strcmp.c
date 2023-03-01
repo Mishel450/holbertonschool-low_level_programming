@@ -13,8 +13,8 @@ int z1 = 0;
 int z2 = 0;
 int p1 = 0;
 int p2 = 0;
-int size1 = strlen(s1)
-int size2 = strlen(s2)
+int size1 = strlen(s1);
+int size2 = strlen(s2);
 for (i = 0 ; i <= size1 ; i++)
 {
 z1 + s1[i] = p1;
