@@ -15,7 +15,7 @@ for (i = 0; i <= size ; i++)
 {
 	for (j = 97 ; j <= 122; j++)
 	{
-		if (j = s[i])
+		if (j == s[i])
 		{
 		s[i] = upper;
 		break;
