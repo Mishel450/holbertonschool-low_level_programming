@@ -1,9 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
- *
- *
- *
+ * *string_toupper - check the code.
+ * @s: is a character.
+ * Return: nothing.
  */
 char *string_toupper(char *s)
 {
@@ -22,6 +22,7 @@ for (i = 0; i <= size ; i++)
 		}
 	upper++;
 	}
+upper = 65;
 }
 return (s);
 }
