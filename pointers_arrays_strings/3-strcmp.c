@@ -15,7 +15,7 @@ for (i = 0; i <= size; i++)
 {
 if (s1 != s2) 
 {
-s1[i] - s2[i] = j;
+j = s1[i] - s2[i];
 break;
 }
 }
