@@ -10,9 +10,21 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
+int size = srtlen(src)
+if (size = 0)
+{
+return ("")
+}
+if (n > size)
+{
+return (src);
+}
+else
+{
 for (i = 0 ; i <= n - 1 ; i++)
 {
 dest[i] = src[i];
 }
 return (dest);
+}
 }
