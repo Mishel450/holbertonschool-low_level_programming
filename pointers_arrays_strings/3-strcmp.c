@@ -13,7 +13,7 @@ int j = 0;
 int size = strlen(s1);
 for (i = 0; i <= size; i++)
 {
-if (s1[i] != s2[i]) 
+if (s1[i] != s2[i])
 {
 j = s1[i] - s2[i];
 break;
