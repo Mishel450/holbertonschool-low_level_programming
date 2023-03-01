@@ -10,12 +10,12 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
-int size = strlen(dest);
+int size = strlen(src);
 if (size >= n)
 {
 for (i = 0 ; i <= size -1 ; i++)
 {
-dest[i] = src[i];
+src[i] = dest[i];
 }
 return (dest);
 }
@@ -23,7 +23,7 @@ else
 {
 for (i = 0 ; i <= n - 1 ; i++)
 {
-dest[i] = src[i];
+src[i] = dest[i];
 }
 return (dest);
 }
