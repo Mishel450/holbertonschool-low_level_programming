@@ -9,7 +9,7 @@
 int _strcmp(char *s1, char *s2)
 {
 int i;
-int size = strlen(s1)
+int size = strlen(s1);
 for (i = 0; i <= size; i++)
 {
 if (s1 != s2) 
@@ -17,5 +17,12 @@ if (s1 != s2)
 break;
 }
 }
+if (i =! size)
+{
+return (s1[i] - s2[i]);
+}
+else
+{
 return (s1 - s2);
+}
 }
