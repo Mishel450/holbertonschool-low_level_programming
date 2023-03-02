@@ -27,6 +27,7 @@ s[j] = upper;
 		}
 			upper++;
 				}
+break;
 }
 	}	
 lower = 97;
