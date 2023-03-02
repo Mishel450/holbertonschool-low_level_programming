@@ -17,9 +17,9 @@ char *leet(char *s)
 	{
 		for (j = 0; j < 12; j++)
 		{
-			if (arrayL[j] == s[i])
+			if (*(arrayL + j) == *(s + i))
 			{
-				s[i] = arrayN[j];
+				*(s + i) = *(arrayN + j);
 			}
 		}
 	}
