@@ -11,7 +11,7 @@ int i;
 char z;
 int j;
 int size = strlen(s);
-char SepWords[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+char SepWords[] = {" ", '\t', '\n', ",", ";", ".", "!", "?", '"', "(", ")", "{", "}"};
 for (i = 0; i <= size; i++)
 		{
 			for (j = 0; j < 13; j++)
