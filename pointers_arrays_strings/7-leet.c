@@ -15,13 +15,14 @@ char *leet(char *s)
 	
 	for (i = 0; i <= size; i++)
 	{
-		for (j = 0; j < 12; j++)
+		for (j = 0; j < 11; j++)
 		{
 			if (*(arrayL + j) == *(s + i))
 			{
 				*(s + i) = *(arrayN + j);
 			}
 		}
+	j = 0;
 	}
 return (s);
 }
