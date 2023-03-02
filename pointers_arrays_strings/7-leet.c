@@ -11,15 +11,15 @@ char *leet(char *s)
 	int j;
 	int size = strlen(s);
 	char arrayL[] = { 'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-
 	char arrayN[] = { '4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	
 	for (i = 0; i <= size; i++)
 	{
 		for (j = 0; j < 12; j++)
 		{
 			if (arrayL[j] == s[i])
 			{
-				*(s + i) = *(arrayN + j);
+				s[i] = arrayN[j];
 			}
 		}
 	}
