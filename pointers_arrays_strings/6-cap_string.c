@@ -11,7 +11,7 @@ char *cap_string(char *s)
 	char z;
 	int j;
 	int size = strlen(s);
-	char SepWords[12] = {' ', '\t', '\n', ',', ';', '.', '!',
+	char SepWords[200] = {' ', '\t', '\n', ',', ';', '.', '!',
 '?', '"', '(', ')', '{', '}'};
 for (i = 0; i <= size; i++)
 	{
