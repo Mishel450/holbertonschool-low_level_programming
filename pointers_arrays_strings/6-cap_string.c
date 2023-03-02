@@ -19,17 +19,13 @@ for (i = 0; i <= size; i++)
 			{
 				if (SepWords[j] == s[i])
 				{
-for (lower = 97; lower <= 122; lower++)
-{
-	if(lower == s[i + 1])
-	{
-		s[i + 1] = lower;
-	}
-			upper++;
-}
+if (s[i + 1] = 97 && s[i + 1] <= 122)
+		{
+		s[i + 1] - 32;
+		}
 				}
 			}
-		upper = 65;
+:x
 			}
 return (s);
 }
