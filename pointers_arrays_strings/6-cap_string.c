@@ -12,7 +12,7 @@ int j = i;
 char upper = 65;
 int lower;
 int size = strlen(s);
-for (i ; i <= size; i++)
+for ( ; i <= size; i++)
 {
 	if (s[i] == 32 || 9 || 10 || 44 || 59 || 46 || 33 || 63 || 34 || 40 || 41 || 123 || 125)
 	{
