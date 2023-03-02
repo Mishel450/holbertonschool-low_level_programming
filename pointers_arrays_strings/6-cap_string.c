@@ -25,7 +25,7 @@ for (lower = 97; lower <= 122; lower++)
 	{
 		s[i + 1] = lower;
 	}
-			upper++
+			upper++;
 }
 				}
 			}
