@@ -24,6 +24,7 @@ if (s[j] >= 97 && s[j] <= 122)
 		if (lower == s[j])
 		{
 s[j] = upper;
+		break;
 		}
 			upper++;
 				}
