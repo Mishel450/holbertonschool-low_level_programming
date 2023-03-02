@@ -13,21 +13,22 @@ int lower;
 int size = strlen(s);
 for (i = 0 ; i <= size; i++)
 {
-	if (s[i + 1] == 32 || 9 || 10 || 44 || 59 || 46 || 33 || 63 || 34 || 40 || 41 || 123 || 125)
-	{
-		if (s[i + 1] >= 97 && s[i + 1] <= 122)
+if (s[i + 1] == 32 || 9 || 10 || 44 || 59 || 46 || 33 || 63 || 34 || 40 || 41 || 123 || 125)
 {
-	for (lower = 97 ; lower <= 122; lower++)
-	{
-		if (lower == s[i + 1])
-		{
+if (s[i + 1] >= 97 && s[i + 1] <= 122)
+{
+for (lower = 97 ; lower <= 122; lower++)
+{
+if (lower == s[i + 1])
+{
 s[i + 1] = upper;
-		break;
-		}
-			upper++;
-				}
+break;
 }
-	}	
+upper++;
+}
+}
+break;
+}	
 lower = 97;
 upper = 65;
 }
