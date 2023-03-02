@@ -12,9 +12,8 @@ char *cap_string(char *s)
 	int j;
 	int size = strlen(s);
 	char SepWords[] = {' ', '\t', '\n', ',', ';', '.', '!',
-	       	'?', '"', '(', ')', '{', '}'};
-
-	for (i = 0; i <= size; i++)
+'?', '"', '(', ')', '{', '}'};
+for (i = 0; i <= size; i++)
 	{
 		for (j = 0; j < 14; j++)
 		{
