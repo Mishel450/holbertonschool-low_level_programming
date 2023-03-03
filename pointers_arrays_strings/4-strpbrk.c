@@ -8,11 +8,11 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char i;
-	char j;
+	int i;
+	int j;
 	char *k = NULL;
-	char sizeS = strlen(s);
-	char sizeAccept = strlen(accept);
+	int sizeS = strlen(s);
+	int sizeAccept = strlen(accept);
 
 	for (i = 0; i <= sizeS; i++)
 	{
