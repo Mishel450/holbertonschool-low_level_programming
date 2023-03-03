@@ -10,21 +10,15 @@ char *_strchr(char *s, char c)
 {
 	int size = strlen(s);
 	int i;
-	char j[1000];
-	int z = 0;
+	char *p = NULL;
 
 	for (i = 0; i <= size; i++)
 	{
 		if (s[i] == c)
 		{
-			for ( ; i <= size; i++)
-			{
-				j[z] = *(s + i);
-				z++;
-			}
-			s = j;
-			return (s);
+			p = &s[i];
+			break;
 		}
 	}
-return (0);
+	return (p);
 }
