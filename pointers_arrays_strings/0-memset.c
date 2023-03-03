@@ -23,7 +23,7 @@ char *_memset(char *s, char b, unsigned int n)
 		{
 			printf("\n");
 		}
-		printf("0x%02x", b[i]);
+		printf("0x%02x", b);
 	}
 printf("\n");
 return (s);
