@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <stdio.h>
 /**
  *
  *
@@ -15,7 +14,7 @@ for (i = 0; i < 9; i++)
 {
 	for (j = 0; j < 9; j++)
 	{
-		printf("%d", *(a + i + j));
+		_putchar(*(a + i + j));
 	}
 }
 }
