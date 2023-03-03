@@ -1,9 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
- *
- *
- *
+ * print_chessboard - check the code.
+ * @a: is a array.
+ * Return: nothing.
  */
 void print_chessboard(char (*a)[8])
 {
