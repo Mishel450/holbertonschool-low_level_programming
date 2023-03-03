@@ -19,10 +19,11 @@ char *_strchr(char *s, char c)
 		{
 			for ( ; i <= size; i++)
 			{
-				*(j + z) = *(s + i);
+				j[z] = *(s + i);
 				z++;
 			}
-			return (j);
+			*s = j
+			return (s);
 		}
 	}
 return ('\0');
