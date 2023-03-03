@@ -12,6 +12,7 @@ char *_strstr(char *haystack, char *needle)
 	int j;
 	char *k = NULL;
 	int v = 0;
+	int b;
 	int size1 = strlen(haystack);
 	int size2 = strlen(needle);
 
