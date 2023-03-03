@@ -8,11 +8,12 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	char i;
-	char j;
+	unsigned int i;
+	unsigned int j;
 	char size1 = strlen(s);
 	char size2 = strlen(accept);
-	unsigned int length = 0;
+	unsigned int v = 0;
+	unsigned int g;
 
 	for (i = 0; i < size1; i++)
 	{
@@ -20,9 +21,15 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(accept + j) == *(s + i))
 			{
-				length++;
+				v = 1;
 			}
 		}
+		if (v != 1)
+		{
+			g = i;
+			break;
+		}
+		v = 0;
 	}
-return (length);
+	return (g);
 }
