@@ -26,6 +26,7 @@ char *_memset(char *s, char b, unsigned int n)
 		if (i == b)
 		{
 		printf("0x%02x", b);
+		}
 		else
 		{
 		printf("0x%02x", s[i]);
