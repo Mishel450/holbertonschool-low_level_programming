@@ -11,13 +11,13 @@ char *_strpbrk(char *s, char *accept)
 	int i;
 	int j;
 	int v = 0;
-	char *k;
+	char *k = NULL;
 	int sizeS = strlen(s);
 	int sizeAccept = strlen(accept);
 
-	for (i = 0; i <= sizeS; i++)
+	for (i = 0; i < sizeS; i++)
 	{
-		for (j = 0; j <= sizeAccept; j++)
+		for (j = 0; j < sizeAccept; j++)
 		{
 			if (*(accept + j) == *(s + i) && v == 0)
 			{
@@ -26,10 +26,6 @@ char *_strpbrk(char *s, char *accept)
 				break;
 			}	
 		}
-	}
-	if (v == 0)
-	{
-		k = NULL;
 	}
 	return (k);
 }
