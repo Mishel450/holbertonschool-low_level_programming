@@ -37,5 +37,12 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
+	if (size2 == 0)
+	{
+	return (haystack);
+	}
+	else
+	{
 	return (k);
+	}
 }
