@@ -11,7 +11,7 @@ char *_strpbrk(char *s, char *accept)
 	int i;
 	int j;
 	int v = 0;
-	char *k = 0;
+	char *k;
 	int sizeS = strlen(s);
 	int sizeAccept = strlen(accept);
 
