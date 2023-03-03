@@ -4,7 +4,7 @@
  * *_strpbrk - check the code.
  * @s: is a pointer.
  * @accept: is a pointer.
- * Return: k. 
+ * Return: k.
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -24,7 +24,7 @@ char *_strpbrk(char *s, char *accept)
 				k = &s[i];
 				v = 1;
 				break;
-			}	
+			}
 		}
 	}
 	return (k);
