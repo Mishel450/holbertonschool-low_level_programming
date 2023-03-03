@@ -28,7 +28,7 @@ for (i = 0; i < n; i++)
 		{
 			*(s + i) = b;
 		}
-		j++
+		j++;
 	}
 return (s);
 }
