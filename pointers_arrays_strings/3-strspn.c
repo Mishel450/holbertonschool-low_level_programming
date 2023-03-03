@@ -1,10 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
- *
- *
- *
- *
+ * _strspn - check the code.
+ * @s: is a pointer.
+ * @accept: is a pointer.
+ * Return: g.
  */
 unsigned int _strspn(char *s, char *accept)
 {
