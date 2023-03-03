@@ -27,5 +27,9 @@ char *_strpbrk(char *s, char *accept)
 			}	
 		}
 	}
+	if (v == 0)
+	{
+		k = NULL;
+	}
 	return (k);
 }
