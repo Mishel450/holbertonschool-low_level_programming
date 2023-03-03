@@ -12,19 +12,21 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 	{
 		if (i % 10)
 		{
-			printf(" ");
+			*(s + i) = " ";
 		}
 
 		if (!(i % 10) && i)
 		{
-			printf("\n");
+			*(s + i) = "\n";
 		}
-		printf("0x%02x", s[i]);
+		if (j == b)
+		{
+			*(s + i) = b
+		}
 	}
-printf("\n");
-return (b);
+return (s);
 }
