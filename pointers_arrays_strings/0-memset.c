@@ -4,7 +4,7 @@
 /**
  * *_memset - check the code.
  * @s: is a pointer.
- * @b: is a array.
+ * @b: is a character.
  * @n: is a number.
  * Return:
  */
@@ -24,7 +24,7 @@ char *_memset(char *s, char b, unsigned int n)
 			printf("\n");
 		}
 		printf("0x%02x", s[i]);
-	printf("%d", b[i]);
+	printf("%d", b);
 	}
 printf("\n");
 return (s);
