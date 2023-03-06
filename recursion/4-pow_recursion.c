@@ -6,9 +6,19 @@
  */
 int _pow_recursion(int x, int y)
 {
+	int i = y;
 	if (y < 0)
 	{
 		return (-1);
 	}
-	return (x * _pow_recursion(y));
+	if (y > 0)
+	{
+		i--;
+		return (x * _pow_recursion(y));
+	}
+	if (i == 0)
+	{
+		return (0);
+	}	
+	return (0);
 }
