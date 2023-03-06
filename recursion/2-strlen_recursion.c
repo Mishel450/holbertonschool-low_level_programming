@@ -13,9 +13,5 @@ i++;
 s++;
 _strlen_recursion(s);
 }
-else
-{
 return (i);
-}
-return (0);
 }
