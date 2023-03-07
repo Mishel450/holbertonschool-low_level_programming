@@ -16,7 +16,7 @@ int square(int j, int i)
 	}
 	else if (k < j)
 	{
-		return (square(j,(i + 1)));
+		return (square(j, (i + 1)));
 	}
 	else
 	{
