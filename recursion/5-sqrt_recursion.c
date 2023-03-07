@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * main - check the code.
+ * square - check the code.
  * @j: is a number.
  * @i: is a number.
  * Return: a number or -1.
  */
-int main(int j, int i)
+int square(int j, int i)
 {
 	int k;
 
@@ -16,7 +16,7 @@ int main(int j, int i)
 	}
 	else if (k < j)
 	{
-		return (main(j,(i + 1)));
+		return (square(j,(i + 1)));
 	}
 	else
 	{
@@ -30,5 +30,5 @@ int main(int j, int i)
  */
 int _sqrt_recursion(int n)
 {
-	return (main(n, 1));
+	return (square(n, 1));
 }
