@@ -1,13 +1,13 @@
 #include "main.h"
 int mainOne(int j, int i, int k)
 {
- if (i * k == j)
+ if (i * k == j && k != j)
 	 return (0);
  if (i < j)
 	 return (mainOne(j, (i + 1), k));
- if (i == j)
+ if (i == j && k != j)
 	 return (mainOne(j, 1, (k + 1)));
- else if (k == j)
+ else
 	 return (1);
 }
 /**
