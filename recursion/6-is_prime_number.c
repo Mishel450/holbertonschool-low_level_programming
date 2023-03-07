@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * mainOne - check the code.
- * @j: is (or not) the prime number.  
+ * @j: is (or not) the prime number. 
  * @i: is a number used to multiply.
  * @k: is a number used to multiply.
  * Return: 0 or 1.
