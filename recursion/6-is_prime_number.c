@@ -7,7 +7,7 @@ int mainOne(int j, int i, int k)
 	 return (mainOne(j, (i + 1), k));
  if (i == j)
 	 return (mainOne(j, 1, (k + 1)));
- if (k == j)
+ else if (k == j)
 	 return (1);
 }
 /**
