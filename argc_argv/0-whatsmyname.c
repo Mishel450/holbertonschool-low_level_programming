@@ -4,7 +4,7 @@
  *
  *
  */
-int mainOne(int argc, int *argv[])
+int mainOne(int argc, char *argv[])
 {
 	return(argv[1]);
 }
