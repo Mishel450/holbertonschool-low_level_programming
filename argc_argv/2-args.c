@@ -5,12 +5,13 @@
  * @argv: .
  * Reeturn: 0.
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int i;
 
 for (i = 0; i <= argc - 1; i++)
 {
-printf("%d", argv[i]);
+printf("%s\n", argv[i]);
 }
+return (0);
 }
