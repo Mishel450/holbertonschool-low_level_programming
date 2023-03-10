@@ -1,10 +1,12 @@
 #include <stdio.h>
 /**
- *
- *
- *
+ * main - check the code.
+ * @argc: .
+ * @argv: .
+ * Return: 0.
  */
-int mainOne(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
-	return(argv[1]);
+	printf("%s\n", argv[0]);
+	return (0);
 }
