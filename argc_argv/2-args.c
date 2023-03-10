@@ -3,7 +3,7 @@
  * main - check the code.
  * @argc: .
  * @argv: .
- * Reeturn: 0.
+ * Return: 0.
  */
 int main(int argc, char *argv[])
 {
