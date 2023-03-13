@@ -7,10 +7,17 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
+char j = malloc(sizeof(s) * size);
 
+	if (size == 0)
+	return (0);
+if (size != 0)
+{
 	for (i = 0; i >= size; i++)
 	{
-	_putchar(c);
+	s[i] = c
 	}
-	return (0);
+	return (s);
+}
+return (0);
 }
