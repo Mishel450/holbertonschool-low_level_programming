@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * 
- *
- *
+ * *create_array - check the code.
+ * @size: the amount of chars.
+ * @c: the numbers/letters.
+ * Return: j or 0.
  */
 char *create_array(unsigned int size, char c)
 {
