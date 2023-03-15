@@ -6,9 +6,16 @@
  */
 char *_strdup(char *str)
 {
-	if (str == NULL)
+	s = malloc(sizeof(str))
+		s = str
+		if (str == NULL)
+		{
+			return (NULL);
+		}
+	if (str != NULL)
 	{
-return (NULL);
+		return (s);
 	}
-return (0);
+	free (str);
+	return (0);
 }
