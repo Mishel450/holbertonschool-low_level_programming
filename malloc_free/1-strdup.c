@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  *
  *
@@ -6,8 +7,14 @@
  */
 char *_strdup(char *str)
 {
-	char s = malloc(sizeof(str));
-	*s = &str;
+	int i;
+	int size = strlen(str);
+	char s = malloc(sizeof(size));
+
+	for (i = 0; i < size; i++)
+	{
+		s[i] = str[i];
+	}
 	if (str == NULL)
 	{
 		return (NULL);
@@ -16,6 +23,5 @@ char *_strdup(char *str)
 	{
 		return (s);
 	}
-	free (str);
 	return (0);
 }
