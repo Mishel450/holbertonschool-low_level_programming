@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * *_strdup - check the code.
- * @*str: is the pointer to copy.
+ * @str: is the pointer to copy.
  * Return: s or 0.
  */
 char *_strdup(char *str)
