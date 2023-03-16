@@ -8,29 +8,33 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int size1 = strlen(s1);
-	int size2 = strlen(s2);
-	int size3 = size1 + size2;
-	int i;
-	int j = 0;
-	char *s3 = malloc(sizeof(char) * size3 + 1);
+	if (s1 != NULL && s2 != NULL)
+	{
+		int size1 = strlen(s1);
+		int size2 = strlen(s2);
+		int size3 = size1 + size2;
+		int i;
+		int j = 0;
+		char *s3 = malloc(sizeof(char) * size3 + 1);
 
-	if (s3 == NULL)
-	{
-		return (NULL);
-	}
-	for (i = 0; i < size3; i++)
-	{
-		if (i < size1)
+		if (s3 == NULL)
 		{
-			s3[i] = s1[i];
+			return (NULL);
 		}
-		else
+		for (i = 0; i < size3; i++)
 		{
-			s3[i] = s2[j];
-			j++;
+			if (i < size1)
+			{
+				s3[i] = s1[i];
+			}
+			else
+			{
+				s3[i] = s2[j];
+				j++;
+			}
 		}
+		j = 0;
+		return (s3);
 	}
-	j = 0;
-	return (s3);
+	return (0);
 }
