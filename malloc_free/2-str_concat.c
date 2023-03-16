@@ -25,11 +25,12 @@ char *str_concat(char *s1, char *s2)
 		{
 			s3[i] = s1[i];
 		}
-		if (i > size1)
+		if (i - 1 > size1)
 		{
 			s3[i] = s2[j];
 			j++;
 		}
 	}
+	j = 0;
 	return (s3);
 }
