@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	int size3 = size1 + size2;
 	int i;
 	int j = 0;
-	char s3 = malloc(sizeof(char) * size3 + 1);
+	char *s3 = malloc(sizeof(char) * size3 + 1);
 
 	for (i = 0; i < size3; i++)
 	{
