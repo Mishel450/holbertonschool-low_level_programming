@@ -15,6 +15,10 @@ char *str_concat(char *s1, char *s2)
 	int j = 0;
 	char *s3 = malloc(sizeof(char) * size3 + 1);
 
+	if (s3 == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; i < size3; i++)
 	{
 		if (i <= size1)
