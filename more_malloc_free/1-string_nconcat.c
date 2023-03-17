@@ -15,8 +15,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int sizeS2 = strlen(s2);
 	unsigned int sizeAll = sizeS1 + n;
 	unsigned int sizeS3 = sizeS1 + sizeS2;
-	char sAll = malloc(sizeof(char) * sizeAll + 1);
-	char s3 = malloc(sizeof(char) * sizeS3 + 1);
+	char *sAll = malloc(sizeof(char) * sizeAll + 1);
+	char *s3 = malloc(sizeof(char) * sizeS3 + 1);
 
 	if (s3 == NULL || sAll == NULL)
 	{
