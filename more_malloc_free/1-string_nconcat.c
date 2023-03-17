@@ -18,10 +18,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *sAll = malloc(sizeof(char) * sizeAll + 1);
 	char *s3 = malloc(sizeof(char) * sizeS3 + 1);
 
-	if (s3 == NULL || sAll == NULL)
-	{
-		return (NULL);
-	}
 	if (n < sizeS2)
 	{
 		for (i = 0; i < sizeAll; i++)
