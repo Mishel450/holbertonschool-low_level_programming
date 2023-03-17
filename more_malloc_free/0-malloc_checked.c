@@ -1,19 +1,19 @@
+#include "main.h"
+#include <stdlib.h>
 /**
- *
- *
- *
+ * malloc_checked - function that allocates memory using malloc.
+ * @b: what we want to allocate.
+ * Return: a pointer to the allocated memory.
  */
-void mainOne(unsigned int **b)
-{
-	*b = malloc (sizeof (unsigned int));
-}
-int mainTwo(unsigned int b)
-{
-return (b);
-}
 void *malloc_checked(unsigned int b)
 {
-mainOne (&b);
+	int *array;
 
-mainTwo (b);
+	array = malloc(b);
+	if (array == NULL)
+	{
+		free(array);
+		exit(98);
+	}
+	return (array);
 }
