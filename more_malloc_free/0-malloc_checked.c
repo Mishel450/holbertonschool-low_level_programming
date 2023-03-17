@@ -3,7 +3,7 @@
  *
  *
  */
-void main0ne(unsigned int **b)
+void mainOne(unsigned int **b)
 {
 	*b = malloc (sizeof (unsigned int));
 }
