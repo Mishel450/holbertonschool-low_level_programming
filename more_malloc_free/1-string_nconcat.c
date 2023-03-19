@@ -1,57 +1,49 @@
 #include "main.h"
+#include <stdlib.h>
 #include <string.h>
 /**
- *
- *
- *
- *
- *
+ * string_nconcat - function that concatenates two strings.
+ * @s1: first string to concat.
+ * @s2: second string to concat.
+ * @n: if greater or equal yo s2 length we use this as len.
+ * Return: a pointer to the allocated memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i;
-	unsigned int j = 0;
-	unsigned int sizeS1 = strlen(s1);
-	unsigned int sizeS2 = strlen(s2);
-	unsigned int sizeAll = sizeS1 + n;
-	unsigned int sizeS3 = sizeS1 + sizeS2;
-	char *sAll = malloc(sizeof(char) * sizeAll + 1);
-	char *s3 = malloc(sizeof(char) * sizeS3 + 1);
+	char *concat;
+	unsigned int len = 0, i = 0, j = 0;
 
-	if (n < sizeS2)
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	if (strlen(s1) > 0)
+		len += strlen(s1);
+	if (strlen(s2) > 0)
 	{
-		for (i = 0; i < sizeAll; i++)
-	{
-		if (i < sizeS1)
-		{
-			sAll[i] = s1[i];
-		}
+		if (n > strlen(s2))
+			len += strlen(s2);
 		else
-		{
-			sAll[i] = s2[j];
-			j++;
-		}
+			len += n;
 	}
-	j = 0;
-	return (sAll);
+	len++;
+	concat = malloc(len * sizeof(char) + 5);
+	if (concat == NULL)
+		return (NULL);
+	if (strlen(s1) > 0 || s1 != NULL)
+	{
+		for (; s1[i]; i++)
+			concat[i] = s1[i];
 	}
-
-	if (n > sizeS2)
+	if (strlen(s2) > 0 || s2 != NULL)
 	{
-	for (i = 0; i < sizeS3; i++)
-	{
-		if (i < sizeS1)
-		{
-			s3[i] = s1[i];
-		}
+		if (n > strlen(s2))
+			for (; s2[j]; i++, j++)
+				concat[i] = s2[j];
 		else
-		{
-			s3[i] = s2[j];
-			j++;
-		}
+			for (; j < n; i++, j++)
+				concat[i] = s2[j];
 	}
-	j = 0;
-	return (s3);
-	}
-return (0);
+	concat[i] = '\0';
+	return (concat);
 }
