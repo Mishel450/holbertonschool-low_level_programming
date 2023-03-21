@@ -2,13 +2,16 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- *
- *
- *
+ * *new_dog - is a copy of the dog_t.
+ * @name: the name of the dog.
+ * @age: the age of the dog.
+ * @owner: the owner of the dog.
+ * Return: 0 or doggod.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggod;
+
 	doggod = malloc(sizeof(dog_t));
 	if (doggod == NULL)
 	{
