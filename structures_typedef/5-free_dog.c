@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlin.h>
+#include <stdlib.h>
 /**
  * free_dog - is for free the information.
  * @d: is the name, age and the owner of the dog.
