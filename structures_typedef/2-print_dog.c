@@ -7,8 +7,13 @@
  */
 void print_dog(struct dog *d)
 {
+char *name;
+        float age;
+        char *owner;
+
 	if (d != NULL)
 	{
+
 		if (name == NULL)
 			d->name = "(nil)";
 		if (owner == NULL)
