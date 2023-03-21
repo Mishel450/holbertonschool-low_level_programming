@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
 /**
  * struct dog - is the name, age and owner of a dog.
@@ -15,3 +18,5 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+
+#endif
