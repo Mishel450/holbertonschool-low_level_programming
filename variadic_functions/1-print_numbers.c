@@ -19,7 +19,7 @@ for (i = 0; i < n; i++)
 	printf("%d", Num);
 	if (separator != NULL && i != n - 1)
 	{
-		printf(separator);
+		printf("%s", separator);
 	}
 }
 va_end(ar);
