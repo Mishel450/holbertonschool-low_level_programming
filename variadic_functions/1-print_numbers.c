@@ -1,8 +1,9 @@
 #include "variadic_functions.h"
 /**
- *
- *
- *
+ * print_numbers - is a function that prints all of its numbers.
+ * @separator: is a "," and space between numbers.
+ * @n: is the number of numbers.
+ * Return: nothing.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -23,4 +24,5 @@ for (i = 0; i < n; i++)
 	}
 }
 va_end(ar);
+printf("\n");
 }
