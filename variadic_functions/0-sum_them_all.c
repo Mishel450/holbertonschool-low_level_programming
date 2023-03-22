@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * sum_then_all - is a function thats sum all the numbers in a constant.
+ * sum_them_all - is a function thats sum all the numbers in a constant.
  * @n: is the number of numbers.
  * Return: sum or 0.
  */
