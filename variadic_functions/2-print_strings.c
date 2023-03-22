@@ -11,11 +11,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list ar;
 	unsigned int i;
 	int num;
-int check;
+	int check;
+int j;
 
 	va_start(ar, n);
 
-	Num = 0;
+	num = 0;
 	for (i = 0; i < n; i++)
 	{
 		check = va_arg(ar, int);
@@ -25,8 +26,12 @@ int check;
 		}
 		else
 		{
-		strcpy(num, va_arg(ar, int));
-		printf("%d", num);
+			int size = strlen(va_arg(ar, int));
+			for (j = 0; j < size; j++)
+			{
+				num[i] = va_arg(ar, int)[i];
+			}
+				printf("%d", num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
