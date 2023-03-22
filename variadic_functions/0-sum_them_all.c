@@ -12,7 +12,7 @@ if (n != 0)
 	int i;
 	int sum;
 
-	va_start (ar, count);
+	va_start (ar, =n);
 
 	sum = 0;
 	for (i = 0; i < n; i++)
