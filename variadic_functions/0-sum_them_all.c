@@ -12,12 +12,12 @@ if (n != 0)
 	unsigned int i;
 	int sum;
 
-	va_start (ar, n);
+	va_start(ar,n);
 
 	sum = 0;
 	for (i = 0; i < n; i++)
-		sum += va_arg (ar, int);
-	va_end (ar);
+		sum += va_arg (ar,int);
+	va_end(ar);
 	return (sum);
 }
 return (0);
