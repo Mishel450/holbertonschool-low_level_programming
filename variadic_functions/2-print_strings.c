@@ -10,7 +10,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ar;
 	unsigned int i;
-	int Num;
+	int num;
 int check;
 
 	va_start(ar, n);
@@ -25,8 +25,8 @@ int check;
 		}
 		else
 		{
-		strcpy(Num, va_arg(ar, int));
-		printf("%d", Num);
+		strcpy(num, va_arg(ar, int));
+		printf("%d", num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
