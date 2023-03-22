@@ -19,7 +19,7 @@ int check;
 	for (i = 0; i < n; i++)
 	{
 		check = va_arg(ar, int);
-		if (check == NULL)
+		if (check == 0)
 		{
 			printf("(nil)");
 		}
