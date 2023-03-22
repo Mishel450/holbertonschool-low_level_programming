@@ -12,7 +12,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	int num;
 	int check;
-int j;
 
 	va_start(ar, n);
 
@@ -26,12 +25,8 @@ int j;
 		}
 		else
 		{
-			int size = strlen(va_arg(ar, int));
-			for (j = 0; j < size; j++)
-			{
-				num[i] = va_arg(ar, int)[i];
-			}
-				printf("%d", num);
+			num = va_arg(ar, int);
+			printf("%d", num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
