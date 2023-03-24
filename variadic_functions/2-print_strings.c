@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <string.h>
-#include <strlib.h>
+#include <stdlib.h>
 /**
  * print_strings - is a functiont that prints strings.
  * @separator: are a "," and space between strings.
