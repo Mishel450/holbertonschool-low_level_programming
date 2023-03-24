@@ -27,7 +27,7 @@ int num;
 		else
 		{
 			num = va_arg(ar, int);
-			printf("%d", num);
+			printf("%s", num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
