@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <string.h>
+#include <strlib.h>
 /**
  * print_strings - is a functiont that prints strings.
  * @separator: are a "," and space between strings.
@@ -17,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		check = va_arg(ar, int);
-		if (check == NULL)
+		if (check == "")
 		{
 			printf("(nil)");
 		}
@@ -26,7 +27,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			int num = malloc(sizeof(int) * 200);
 			num = va_arg(ar, int);
 			printf("%d", num);
-			free(num);
+		free(num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
