@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			int num = malloc(sizeof(int) * 200);
+			num = malloc(sizeof(int) * 200);
 			num = va_arg(ar, int);
 			printf("%d", num);
 		}
