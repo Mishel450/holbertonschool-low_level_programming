@@ -24,7 +24,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			int num[1000];
 			num = va_arg(ar, int);
 			printf("%d", num);
 		}
