@@ -10,12 +10,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ar;
 	unsigned int i;
-	int num;
 	int check;
 
 	va_start(ar, n);
 
-	num = 0;
 	for (i = 0; i < n; i++)
 	{
 		check = va_arg(ar, int);
@@ -25,8 +23,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
+			int num = malloc(sizeof(int) * 200);
 			num = va_arg(ar, int);
 			printf("%d", num);
+			free(num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
