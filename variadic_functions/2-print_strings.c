@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list ar;
 	unsigned int i;
 	char check = 0;
-char num;
+	char num;
 
 	va_start(ar, n);
 
@@ -27,7 +27,8 @@ char num;
 		else
 		{
 			num = va_arg(ar, char);
-
+			printf("%s", num);
+		}
 		if (separator != NULL && i != n - 1)
 		{
 			printf("%s", separator);
