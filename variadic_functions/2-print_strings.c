@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		check = va_arg(ar, int);
-		if (check == NULL)
+		if (check == 0)
 		{
 			printf("(nil)");
 		}
@@ -27,7 +27,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			int num = malloc(sizeof(int) * 200);
 			num = va_arg(ar, int);
 			printf("%d", num);
-		free(num);
 		}
 		if (separator != NULL && i != n - 1)
 		{
