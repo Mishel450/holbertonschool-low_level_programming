@@ -16,7 +16,7 @@ va_start(ar, format);
 
 while (i < format)
 {
-	switch(format)
+	switch(ar)
 	{
 case 'c':
 char numC;
