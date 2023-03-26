@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  *
  *
@@ -8,7 +9,8 @@
 void print_all(const char * const format, ...)
 {
 va_list ar;
-char i;
+char *i;
+
 
 va_start(ar, format);
 
@@ -19,7 +21,7 @@ while (i < format)
 case 'c':
 char numC;
 numC = va_arg(ar, char);
-printf("%s", numC);
+printf("%d", numC);
 break;
 case 'i':
 int numI;
@@ -37,6 +39,6 @@ numS = va_arg(ar, char *);
 printf("%s", numS);
 break;
 	}
-
+i++
 }			va_end(ar);
 }
