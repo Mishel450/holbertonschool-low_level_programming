@@ -10,11 +10,11 @@ void print_all(const char * const format, ...)
 va_list ar;
 char i;
 
-va_start(ar, formart);
+va_start(ar, format);
 
 while (i < format)
 {
-	switch()
+	switch(format)
 	{
 case 'c':
 char numC;
