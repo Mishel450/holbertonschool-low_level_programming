@@ -16,7 +16,7 @@ char *numS;
 
 va_start(ar, format);
 
-	switch(ar)
+	switch(format)
 	{
 case 'c':
 numC = va_arg(ar, char);
