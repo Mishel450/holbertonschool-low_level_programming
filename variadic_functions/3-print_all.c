@@ -33,12 +33,12 @@ void print_all(const char * const format, ...)
 				j = 1;
 				break;
 			case 's':
-				string = va_arg(x, char *);
+				string = va_arg(ar, char *);
 				!string ? printf("(nil)") : printf("%s", string);
 				j = 1;
 				break;
 		}
-		if (cond == 1 && i < formatSelect - 1)
+		if (j == 1 && i < formatS - 1)
 			printf(", ");
 		i++;
 	}
