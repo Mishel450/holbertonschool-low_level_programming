@@ -12,7 +12,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (Node == NULL)
 		return (NULL);
-	Node->n = strdup(n);
+	Node->n = n;
 	Node->next = *head;
 	*head = Node;
 	return (Node);
