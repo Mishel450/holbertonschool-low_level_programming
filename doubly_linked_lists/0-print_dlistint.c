@@ -10,7 +10,7 @@ int i = 0;
 
 	while (h != NULL)
 	{
-			printf("%s\n", h);
+			printf("%d\n", h->n);
 		i++;
 		h = h->next;
 	}
