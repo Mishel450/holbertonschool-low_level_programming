@@ -1,28 +1,25 @@
 #include "lists.h"
 /**
- *
- *
- *
+ * add_dnodeint - .
+ * @head: .
+ * @n: .
+ * Return: .
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *Node;
+dlistint_t *Node = malloc(sizeof(dlistint_t));
 
-	Node = malloc(sizeof(dlistint_t)); 
 	if (Node == NULL)
 		return (NULL);
-	if (*head != NULL)
+	Node->n = n;
+	Node->prev = NULL;
+	if (*head)
 	{
-		Node->n = n;
 		Node->next = *head;
-		*head = Node;
+		(*head)->prev = Node;
 	}
 	else
-	{
-		Node->n = n;
-		Node->prev = *head;
-		*head = Node;
-	}
+		Node->next = NULL;
+	*head = Node;
 	return (Node);
-
 }
