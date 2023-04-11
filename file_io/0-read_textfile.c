@@ -18,7 +18,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filechecker == -1)
 		return (0);
 	strcpy(filewriter, filename);
-	write(2, &filewriter, letters);
+	write(0, &filewriter, letters);
 	close(filechecker);
 	return (letters);
 }
