@@ -9,6 +9,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filechecker;
 	char *filewriter;
+int i;
 
 
 	filewriter = malloc(sizeof(char) * letters);
@@ -18,7 +19,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filechecker == -1)
 		return (0);
 	strcpy(filewriter, filename);
-	write(1, &filewriter, letters);
+	for (i = 0; i < letters; i++
+			{
+	write(1, &(filewriter + i), letters);
+	}
 	close(filechecker);
 	return (letters);
 }
