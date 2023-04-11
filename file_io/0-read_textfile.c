@@ -17,9 +17,9 @@ int filewriter;
 		return (0);
 	close(filereader);
 	filewriter = open("filename", O_WRONLY);
-	if (filewriter == -1);
+	if (filewriter == -1)
 	return (0);
 	printf("%d", filewriter);
-	close(filewriter):
+	close(filewriter);
 	return (letters);
 }
