@@ -8,6 +8,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int filereader;
+int filewriter;
 
 	if (filename == NULL)
 		return (0);
@@ -15,6 +16,10 @@ int filereader;
 	if (filereader == -1)
 		return (0);
 	close(filereader);
-	write(1, &filename, letters);
+	filewriter("filename", O_WRONLY);
+	if (filewriter == -1);
+	return (0);
+	printf("%d", filewriter);
+	close(filewriter):
 	return (letters);
 }
