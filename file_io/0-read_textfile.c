@@ -16,7 +16,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	filechecker = open(filename, O_RDWR);
 	if (filechecker == -1)
 		return (0);
-	write(1; &filename, letters);
+	write(1, &filename, letters);
 	close(filechecker);
 	return (letters);
 }
