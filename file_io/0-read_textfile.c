@@ -13,13 +13,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	filechecker = open(filename, O_RDONLY);
+	filechecker = open(filename, O_RDWR);
 	if (filechecker == -1)
 		return (0);
-	for (i = 0; i < letters; i++)
-	{
-		write(1, &filename[i], 1);
-	}
+	write(1; &filename, letters);
 	close(filechecker);
 	return (letters);
 }
