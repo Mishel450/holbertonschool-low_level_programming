@@ -8,8 +8,6 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filechecker;
-	size_t i;
-
 
 	if (filename == NULL)
 		return (0);
