@@ -15,11 +15,11 @@ int filewriter;
 	filereader = open("filename", O_RDONLY);
 	if (filereader == -1)
 		return (0);
-	close(filereader);
 	filewriter = open("filename", O_RDWR);
 	if (filewriter == -1)
 	return (0);
 	write(1, &filewriter, letters);
+	close(filereader);
 	close(filewriter);
 	return (letters);
 }
