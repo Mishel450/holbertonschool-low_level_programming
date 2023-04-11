@@ -15,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	filechecker = open("filename", O_RDONLY);
-	if (filechecker == -1)
+	if (filechecker == 0)
 		return (0);
 	strcpy(filewriter, filename);
 	write(0, &filewriter, letters);
