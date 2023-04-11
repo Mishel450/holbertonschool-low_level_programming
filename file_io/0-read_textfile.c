@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	if (filename != NULL)
 	{
-		write(3, &filename, letters);
+		write(4, &filename, letters);
 		return (letters);
 	}
 	return (0);
