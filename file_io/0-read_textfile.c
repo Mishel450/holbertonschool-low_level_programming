@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename != NULL)
 	{
 		int filestore = open("filename", O_RDWR);
-		write(3, &filestore, letters);
+		write(4, &filestore, letters);
 		return (letters);
 	}
 	return (0);
