@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	filewriter = malloc(sizeof(char) * letters);
 	if (filename == NULL)
 		return (0);
-	filechecker = open("filename", O_RDWR);
+	filechecker = open("filename", O_RDONLY);
 	if (filechecker == -1)
 		return (0);
 	strcpy(filewriter, filename);
