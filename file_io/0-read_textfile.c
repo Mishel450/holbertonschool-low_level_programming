@@ -7,9 +7,11 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int filereader;
-int filewriter = malloc(sizeof(int) * letters + 1);
+	int filereader;
+	int filewriter;
 
+
+	filewriter = malloc(sizeof(int) * letters + 1);
 	if (filename == NULL)
 		return (0);
 	filereader = open("filename", O_RDONLY);
@@ -17,7 +19,7 @@ int filewriter = malloc(sizeof(int) * letters + 1);
 		return (0);
 	filewriter = open("filename", O_RDWR);
 	if (filewriter == -1)
-	return (0);
+		return (0);
 	write(1, &filewriter, letters);
 	close(filereader);
 	close(filewriter);
