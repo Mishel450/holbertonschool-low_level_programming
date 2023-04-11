@@ -19,7 +19,7 @@ int i;
 	if (filechecker == -1)
 		return (0);
 	strcpy(filewriter, filename);
-	for (i = 0; i < letters; i++
+	for (i = 0; i < letters; i++)
 			{
 	write(1, &(filewriter + i), letters);
 	}
