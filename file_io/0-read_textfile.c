@@ -9,14 +9,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	if (filename == NULL)
 		return (0);
-	if (filename != NULL)
-	{
-		int filereader = open("filename", O_RDONLY);
-		if (filereader == -1)
-			return (0);
-		close(filereader);
-		write(1, &filename, letters);
-		return (letters);
-	}
-	return (0);
+	int filereader = open("filename", O_RDONLY);
+	if (filereader == -1)
+		return (0);
+	close(filereader);
+	write(1, &filename, letters);
+	return (letters);
 }
