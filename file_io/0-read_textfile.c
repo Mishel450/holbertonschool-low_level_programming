@@ -16,7 +16,7 @@ int filewriter;
 	if (filereader == -1)
 		return (0);
 	close(filereader);
-	filewriter("filename", O_WRONLY);
+	filewriter = open("filename", O_WRONLY);
 	if (filewriter == -1);
 	return (0);
 	printf("%d", filewriter);
