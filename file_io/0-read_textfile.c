@@ -11,7 +11,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	if (filename != NULL)
 	{
-		open("filename", O_RDWR);
+		int filestore = open("filename", O_RDWR);
+		printf("%d", filestore);
 		return (letters);
 	}
 	return (0);
