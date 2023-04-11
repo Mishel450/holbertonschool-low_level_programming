@@ -7,21 +7,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int filereader;
+	int filechecker;
 	char *filewriter;
 
 
 	filewriter = malloc(sizeof(char) * letters);
 	if (filename == NULL)
 		return (0);
-	filereader = open("filename", O_RDONLY);
-	if (filereader == -1)
+	filechecker = open("filename", O_RDWR);
+	if (filechecker == -1)
 		return (0);
-	filewriter = open("filename", O_RDWR);
-	if (filewriter == -1)
-		return (0);
+	strcpy(filewriter, filename);
 	write(1, &filewriter, letters);
-	close(filereader);
-	close(filewriter);
+	close(filechecker);
 	return (letters);
 }
