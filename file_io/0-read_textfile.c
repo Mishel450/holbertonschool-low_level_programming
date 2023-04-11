@@ -19,7 +19,7 @@ int filewriter;
 	filewriter = open("filename", O_WRONLY);
 	if (filewriter == -1)
 	return (0);
-	printf("%d", filewriter);
+	write(1, &filewriter, letters);
 	close(filewriter);
 	return (letters);
 }
