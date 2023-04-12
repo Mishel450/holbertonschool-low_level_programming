@@ -7,15 +7,15 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int filechecker, i;
-char *filewriter = malloc(sizeof(char *) * strlen(filename) + 1);
-	
+	int filechecker;
+	char *filewriter = malloc(sizeof(char *) * strlen(filename));
+
 	if (filename == NULL)
 		return (0);
 	filechecker = open("filename", O_RDONLY);
 	if (filechecker == -1)
 		return (0);
-i=read(filechecker, filewriter, strlen(filename));
+	read(filechecker, filewriter, letters);
 	write(1, filewriter, letters);
 	close(filechecker);
 	return (letters);
