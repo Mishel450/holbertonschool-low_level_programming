@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stddef.h>
 
 /**
  * struct hash_node_s - Node of a hash table
