@@ -6,7 +6,7 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t ht[size];
+	hash_table_t *ht[size];
 
 	if (ht == NULL)
 		return (NULL);
