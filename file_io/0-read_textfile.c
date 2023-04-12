@@ -15,7 +15,7 @@ char *filewriter = malloc(sizeof(char *) * strlen(filename) + 1);
 	filechecker = open("filename", O_RDONLY);
 	if (filechecker == -1)
 		return (0);
-	i = read(filechecker, filewriter, strlen(filename));
+i=read(filechecker, filewriter, strlen(filename));
 	write(1, filewriter, letters);
 	close(filechecker);
 	return (letters);
