@@ -16,7 +16,7 @@ char *filewriter = malloc(sizeof(char *) * letters);
 	if (filechecker == -1)
 		return (0);
 	read(filechecker, filewriter, letters);
-	write(1, &filewriter, letters);
+	write(1, filewriter, letters);
 	close(filechecker);
 	return (letters);
 }
