@@ -7,16 +7,16 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int filechecker;
+	int fd;
 	char *filewriter = malloc(sizeof(char *) * strlen(filename));
 
 	if (filename == NULL)
 		return (0);
-	filechecker = open("filename", O_RDONLY);
-	if (filechecker == -1)
+	fd = open("filename", O_RDONLY);
+	if (fd == -1)
 		return (0);
-	read(filechecker, filewriter, letters);
+	read(fd, filewriter, letters);
 	write(1, &filewriter, letters);
-	close(filechecker);
+	close(fd);
 	return (letters);
 }
