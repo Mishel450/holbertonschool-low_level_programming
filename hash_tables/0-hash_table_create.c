@@ -7,9 +7,10 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t ht;
+int i = &ht; 
 
-	ht = malloc(sizeof(size));
-	if (ht == NULL)
+	ht = malloc(sizeof(size) + 1);
+	if (ht == '\0')
 		return (NULL);
-	return (&ht);
+	return (i);
 }
