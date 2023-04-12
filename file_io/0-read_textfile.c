@@ -12,9 +12,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
+	if (filename != NULL)
+	{
 	fd = open("filename", O_RDONLY);
+	if (fb == -1)
+		return (0);
 	read(fd, filewriter, letters);
 	write(1, &filewriter, letters);
 	close(fd);
 	return (letters);
+	}
+	return (0);
 }
