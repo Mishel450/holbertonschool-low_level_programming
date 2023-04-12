@@ -6,9 +6,9 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	unsigned long int i[size];
+	unsigned long int ht[size];
 
-	if (i == NULL)
+	if (ht == NULL)
 		return (NULL);
-	return (&i);
+	return (&ht);
 }
