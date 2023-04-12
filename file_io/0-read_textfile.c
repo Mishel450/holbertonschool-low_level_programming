@@ -13,6 +13,8 @@ char *filewriter = malloc(sizeof(char *) * letters);
 	if (filename == NULL)
 		return (0);
 	filechecker = open("filename", O_RDONLY);
+	if (filechecker == NULL)
+		return (0);
 	read(filechecker, filewriter, letters);
 	write(1, filewriter, letters);
 	close(filechecker);
