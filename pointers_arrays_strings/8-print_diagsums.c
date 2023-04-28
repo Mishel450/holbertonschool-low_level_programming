@@ -14,12 +14,12 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		j += *a[i][i];
+		j += *(a(i)(i));
 	}
 	i = 0;
 	for (i = size; i > 0; i--)
 	{
-		h += *a[i][i];
+		h += *(a(i)(i));
 	}
 	printf("%d, %d", j, h);
 }
