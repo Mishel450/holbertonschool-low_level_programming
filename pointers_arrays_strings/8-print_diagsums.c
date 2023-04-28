@@ -16,14 +16,14 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		plus = a[b][b];
+		plus = *a[b][b];
 		j += plus;
 		b++;
 	}
 	i = 0;
 	for (i = size; i > 0; i--)
 	{
-		plus = a[b][b];
+		plus = *a[b][b];
 		h += plus;
 		b++;
 	}
